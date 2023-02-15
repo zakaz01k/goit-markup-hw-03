@@ -1,0 +1,192 @@
+:root {
+	--primary-text-color: #434455;
+	--title-text-color: #2e2f42;
+	--primary-link-color: #4d5ae5;
+	--hover-link-color: #404bbf;
+	--title-hero-color: #ffffff;
+	--button-hover-color: #4d5ae5;
+	--hero-button-background-color: #4d5ae5;
+	--hero-button-hover-bg-color: #404bbf;
+	--category-button-bg-c: #f4f4fd;
+	--category-button-border-c: #e7e9fc;
+}
+
+body {
+	color: var(--primary-text-color);
+	font-family: "Roboto", sans-serif;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+header {
+	background-color: var(--title-hero-color);
+}
+/* Logo */
+.logo-web {
+	color: var(--primary-link-color);
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+header .logo-studio {
+	color: var(--title-text-color);
+}
+/* Navigation */
+.site-nav {
+	list-style: none;
+}
+
+.site-nav .link {
+	color: var(--title-text-color);
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--hover-link-color);
+}
+.site-nav .link.current {
+	color: var(--hover-link-color);
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+.contacts-nav {
+	list-style: none;
+}
+.email,
+.phone-number {
+	color: var(--title-text-color);
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.email:hover,
+.phone-number:hover,
+.email:focus,
+.phone-number:focus {
+	color: var(--hover-link-color);
+}
+/* Hero */
+.hero {
+	background-color: var(--title-text-color);
+}
+.hero-title {
+	color: var(--title-hero-color);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 60px;
+}
+.hero-button {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--title-hero-color);
+	background-color: var(--hero-button-background-color);
+	cursor: pointer;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 1px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	color: var(--title-hero-color);
+	background-color: var(--hero-button-hover-bg-color);
+}
+/* Section */
+.section-title {
+	color: var(--title-text-color);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.section .title {
+	color: var(--title-text-color);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+.section .text {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.section.team {
+	background-color: var(--category-button-bg-c);
+}
+/* Advantages */
+.advantages-list .title {
+	color: var(--title-text-color);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+.advantages-list .text {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* Portfolio.html */
+.category-button .button {
+	color: var(--primary-link-color);
+	background-color: var(--category-button-bg-c);
+	border: 1px solid var(--category-button-border-c);
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.category-button .button:hover,
+.category-button .button:focus {
+	color: var(--title-hero-color);
+	background-color: var(--hover-link-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.category-button {
+	list-style: none;
+}
+
+/* Footer */
+footer .logo-studio {
+	color: var(--category-button-bg-c);
+}
+
+footer {
+	background-color: var(--title-text-color);
+}
+
+footer > .text {
+	color: var(--category-button-border-c);
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+}
