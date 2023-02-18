@@ -11,19 +11,43 @@
 	--category-button-border-c: #e7e9fc;
 }
 
+html {
+	box-sizing: border-box;
+}
 body {
 	color: var(--primary-text-color);
 	font-family: "Roboto", sans-serif;
 }
 ul {
 	list-style: none;
+	margin: 0;
+	padding-left: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 a {
 	text-decoration: none;
 }
 
+.container {
+	outline: 2px solid teal;
+	width: 1158px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 header {
 	background-color: var(--title-hero-color);
+	border-bottom: 1px solid #e7e9fc;
 }
 /* Logo */
 .logo-web {
@@ -85,6 +109,7 @@ header .logo-studio {
 /* Hero */
 .hero {
 	background-color: var(--title-text-color);
+	text-align: center;
 }
 .hero-title {
 	color: var(--title-hero-color);
@@ -92,6 +117,7 @@ header .logo-studio {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 60px;
+	margin-bottom: 48px;
 }
 .hero-button {
 	font-family: "Roboto";
@@ -102,6 +128,7 @@ header .logo-studio {
 	color: var(--title-hero-color);
 	background-color: var(--hero-button-background-color);
 	cursor: pointer;
+	min-width: 169px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: 1px;
@@ -112,6 +139,7 @@ header .logo-studio {
 	color: var(--title-hero-color);
 	background-color: var(--hero-button-hover-bg-color);
 }
+
 /* Section */
 .section-title {
 	color: var(--title-text-color);
@@ -119,6 +147,9 @@ header .logo-studio {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 40px;
+	text-align: center;
+
+	margin-bottom: 72px;
 }
 
 .section .title {
@@ -132,10 +163,11 @@ header .logo-studio {
 	font-size: 16px;
 	line-height: 24px;
 }
-
+/* Our team */
 .section.team {
 	background-color: var(--category-button-bg-c);
 }
+
 /* Advantages */
 .advantages-list .title {
 	color: var(--title-text-color);
@@ -143,12 +175,13 @@ header .logo-studio {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 24px;
+	margin-bottom: 8px;
 }
 .advantages-list .text {
 	font-size: 16px;
 	line-height: 24px;
 }
-
+/* ---------------------------------------------------------- */
 /* Portfolio.html */
 .category-button .button {
 	color: var(--primary-link-color);
@@ -174,7 +207,7 @@ header .logo-studio {
 .category-button {
 	list-style: none;
 }
-
+/* ----------------------------------------------------------- */
 /* Footer */
 footer .logo-studio {
 	color: var(--category-button-bg-c);
@@ -184,7 +217,7 @@ footer {
 	background-color: var(--title-text-color);
 }
 
-footer > .text {
+.container.footer > .text {
 	color: var(--category-button-border-c);
 	font-size: 16px;
 	line-height: 24px;
