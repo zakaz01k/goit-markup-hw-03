@@ -183,10 +183,6 @@ header .logo-studio {
 	font-size: 16px;
 	line-height: 24px;
 }
-/* Our team */
-.section.team {
-	background-color: var(--category-button-bg-c);
-}
 
 /* Advantages */
 .advantages-list {
@@ -212,9 +208,11 @@ header .logo-studio {
 }
 
 /* Our Team */
+
 .section.team {
 	margin-top: 120px;
 	padding-bottom: 120px;
+	background-color: var(--category-button-bg-c);
 }
 .team-list {
 	display: flex;
@@ -234,8 +232,12 @@ header .logo-studio {
 /* ---------------------------------------------------------- */
 /* Portfolio.html */
 
-.container.portfolio {
+.container.portfolio .title {
 	padding-top: 96px;
+}
+
+.container.portfolio {
+	padding-bottom: 120px;
 }
 .category-button {
 	display: flex;
