@@ -22,29 +22,29 @@
 	</head>
 	<body>
 		<!-- Заголовок -->
-		<header class="header">
-			<div class="container">
-				<nav>
-					<a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-					<ul class="site-nav">
-						<li><a href="./index.html" class="link current">Studio</a></li>
-						<li><a href="./portfolio.html" class="link">Portfolio</a></li>
-						<li><a href="" class="link">Contacts</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="container">
-				<address>
-					<ul class="contacts-nav">
-						<li>
-							<a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
-						</li>
-						<li>
-							<a href="tel:+110001111111" class="phone-number">+11 (000) 111-11-11</a>
-						</li>
-					</ul>
-				</address>
-			</div>
+		<header>
+			<!-- <div class="container"> -->
+			<nav class="container main-nav">
+				<a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+
+				<ul class="site-nav">
+					<li class="item"><a href="./index.html" class="link current">Studio</a></li>
+					<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+					<li class="item"><a href="" class="link">Contacts</a></li>
+				</ul>
+
+				<!-- <address> (Commented out because the {m-l:auto}  doesn't work)-->
+				<ul class="contacts-nav">
+					<li class="item">
+						<a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
+					</li>
+					<li class="item">
+						<a href="tel:+110001111111" class="phone-number">+11 (000) 111-11-11</a>
+					</li>
+				</ul>
+				<!-- </address> -->
+			</nav>
+			<!-- </div> -->
 		</header>
 		<!-- Основна -->
 		<main>
@@ -89,7 +89,7 @@
 			<section class="section">
 				<div class="container">
 					<h2 class="section-title">What are we doing</h2>
-					<ul>
+					<ul class="main-photos">
 						<li>
 							<img src="./images/photo-1.jpg" alt="View from desktop" width="360" />
 						</li>
@@ -107,22 +107,22 @@
 				<div class="container">
 					<h2 class="section-title">Our Team</h2>
 					<ul class="team-list">
-						<li>
+						<li class="item">
 							<img src="./images/human-1.jpg" alt="First worker" width="264" />
 							<h3 class="title">Mark Guerrero</h3>
 							<p class="text">Product Designer</p>
 						</li>
-						<li>
+						<li class="item">
 							<img src="./images/human-2.jpg" alt="Second worker" width="264" />
 							<h3 class="title">Tom Ford</h3>
 							<p class="text">Frontend Developer</p>
 						</li>
-						<li>
+						<li class="item">
 							<img src="./images/human-3.jpg" alt="Third worker" width="264" />
 							<h3 class="title">Camila Garcia</h3>
 							<p class="text">Marketing</p>
 						</li>
-						<li>
+						<li class="item">
 							<img src="./images/human-4.jpg" alt="Fourth worker" width="264" />
 							<h3 class="title">Daniel Wilson</h3>
 							<p class="text">UI Designer</p>

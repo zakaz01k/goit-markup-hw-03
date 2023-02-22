@@ -21,7 +21,7 @@ body {
 ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 }
 h1,
 h2,
@@ -39,10 +39,12 @@ a {
 }
 
 .container {
-	outline: 2px solid teal;
+	/* outline: 2px solid teal; */
 	width: 1158px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 header {
@@ -63,14 +65,26 @@ header .logo-studio {
 	color: var(--title-text-color);
 }
 /* Navigation */
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+
 .site-nav {
-	list-style: none;
+	display: flex;
+	margin-left: 76px;
+}
+
+.site-nav .item:not(:last-child) {
+	margin-right: 40px;
 }
 
 .site-nav .link {
+	display: block;
+	padding-bottom: 24px;
+	padding-top: 24px;
+
 	color: var(--title-text-color);
-	font-family: "Roboto";
-	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
@@ -81,21 +95,25 @@ header .logo-studio {
 }
 .site-nav .link.current {
 	color: var(--hover-link-color);
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
 }
+/* Contacts */
+
 .contacts-nav {
-	list-style: none;
+	display: flex;
+	margin-left: auto;
 }
+.contacts-nav .item + .item {
+	margin-left: 40px;
+}
+
 .email,
 .phone-number {
 	color: var(--title-text-color);
-	font-family: "Roboto";
 	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -110,6 +128,8 @@ header .logo-studio {
 .hero {
 	background-color: var(--title-text-color);
 	text-align: center;
+	padding-top: 188px;
+	padding-bottom: 188px;
 }
 .hero-title {
 	color: var(--title-hero-color);
@@ -120,7 +140,7 @@ header .logo-studio {
 	margin-bottom: 48px;
 }
 .hero-button {
-	font-family: "Roboto";
+	padding: 16px 24px;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -148,7 +168,7 @@ header .logo-studio {
 	font-size: 36px;
 	line-height: 40px;
 	text-align: center;
-
+	padding-top: 120px;
 	margin-bottom: 72px;
 }
 
@@ -169,6 +189,10 @@ header .logo-studio {
 }
 
 /* Advantages */
+.advantages-list {
+	display: flex;
+	column-gap: 25px;
+}
 .advantages-list .title {
 	color: var(--title-text-color);
 	font-style: normal;
@@ -181,40 +205,91 @@ header .logo-studio {
 	font-size: 16px;
 	line-height: 24px;
 }
+/* What awe we doing */
+.main-photos {
+	display: flex;
+	column-gap: 24px;
+}
+
+/* Our Team */
+.section.team {
+	margin-top: 120px;
+	padding-bottom: 120px;
+}
+.team-list {
+	display: flex;
+	column-gap: 24px;
+	text-align: center;
+}
+.team-list .item {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+}
+.item > img {
+	padding-bottom: 32px;
+}
+.team-list .text {
+	padding-bottom: 32px;
+}
 /* ---------------------------------------------------------- */
 /* Portfolio.html */
-.category-button .button {
+
+.container.portfolio {
+	padding-top: 96px;
+}
+.category-button {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 72px;
+	column-gap: 24px;
+}
+.category-button .item {
 	color: var(--primary-link-color);
 	background-color: var(--category-button-bg-c);
 	border: 1px solid var(--category-button-border-c);
 	border-radius: 4px;
 	cursor: pointer;
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
+	padding: 12px 24px;
 }
 
-.category-button .button:hover,
-.category-button .button:focus {
+.category-button .item:hover,
+.category-button .item:focus {
 	color: var(--title-hero-color);
 	background-color: var(--hover-link-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 	cursor: pointer;
 }
-.category-button {
-	list-style: none;
+.portfolio-cards .title {
+	padding-top: 32px;
+}
+.portfolio-cards .text {
+	padding-bottom: 32px;
+}
+
+.portfolio-cards {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 48px;
+	column-gap: 24px;
+}
+.portfolio-cards .item {
+	background: #ffffff;
+	border: 1px solid #e7e9fc;
 }
 /* ----------------------------------------------------------- */
 /* Footer */
-footer .logo-studio {
-	color: var(--category-button-bg-c);
-}
-
 footer {
 	background-color: var(--title-text-color);
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+footer .logo-studio {
+	color: var(--category-button-bg-c);
 }
 
 .container.footer > .text {
@@ -222,4 +297,5 @@ footer {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.02em;
+	width: 264px;
 }
