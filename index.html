@@ -23,39 +23,41 @@
 	<body>
 		<!-- Заголовок -->
 		<header>
-			<!-- <div class="container"> -->
-			<nav class="container main-nav">
-				<a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+			<div class="container">
+				<nav class="container main-nav">
+					<a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
 
-				<ul class="site-nav">
-					<li class="item"><a href="./index.html" class="link current">Studio</a></li>
-					<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-					<li class="item"><a href="" class="link">Contacts</a></li>
-				</ul>
+					<ul class="site-nav">
+						<li class="item"><a href="./index.html" class="link current">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+						<li class="item"><a href="" class="link">Contacts</a></li>
+					</ul>
 
-				<!-- <address> (Commented out because the {m-l:auto}  doesn't work)-->
-				<ul class="contacts-nav">
-					<li class="item">
-						<a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
-					</li>
-					<li class="item">
-						<a href="tel:+110001111111" class="phone-number">+11 (000) 111-11-11</a>
-					</li>
-				</ul>
-				<!-- </address> -->
-			</nav>
-			<!-- </div> -->
+					<address class="address">
+						<ul class="contacts-nav">
+							<li class="item">
+								<a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
+							</li>
+							<li class="item">
+								<a href="tel:+110001111111" class="phone-number">+11 (000) 111-11-11</a>
+							</li>
+						</ul>
+					</address>
+				</nav>
+			</div>
 		</header>
 		<!-- Основна -->
 		<main>
 			<section class="hero">
-				<h1 class="hero-title">Effective Solutions for Your Business</h1>
-				<button class="hero-button" type="button">Order Service</button>
+				<div class="container">
+					<h1 class="hero-title">Effective Solutions for Your Business</h1>
+					<button class="hero-button" type="button">Order Service</button></div
+				>
 			</section>
 
 			<section class="section">
 				<div class="container">
-					<h2 class="section-title">Advantages</h2>
+					<h2 class="secret-title">Advantages</h2>
 
 					<ul class="advantages-list">
 						<li>
@@ -86,7 +88,7 @@
 				</div>
 			</section>
 
-			<section class="section">
+			<section class="section photos">
 				<div class="container">
 					<h2 class="section-title">What are we doing</h2>
 					<ul class="main-photos">
@@ -109,23 +111,31 @@
 					<ul class="team-list">
 						<li class="item">
 							<img src="./images/human-1.jpg" alt="First worker" width="264" />
-							<h3 class="title">Mark Guerrero</h3>
-							<p class="text">Product Designer</p>
+							<div class="cards-team-text">
+								<h3 class="title">Mark Guerrero</h3>
+								<p class="text">Product Designer</p>
+							</div>
 						</li>
 						<li class="item">
 							<img src="./images/human-2.jpg" alt="Second worker" width="264" />
-							<h3 class="title">Tom Ford</h3>
-							<p class="text">Frontend Developer</p>
+							<div class="cards-team-text">
+								<h3 class="title">Tom Ford</h3>
+								<p class="text">Frontend Developer</p>
+							</div>
 						</li>
 						<li class="item">
 							<img src="./images/human-3.jpg" alt="Third worker" width="264" />
-							<h3 class="title">Camila Garcia</h3>
-							<p class="text">Marketing</p>
+							<div class="cards-team-text">
+								<h3 class="title">Camila Garcia</h3>
+								<p class="text">Marketing</p>
+							</div>
 						</li>
 						<li class="item">
 							<img src="./images/human-4.jpg" alt="Fourth worker" width="264" />
-							<h3 class="title">Daniel Wilson</h3>
-							<p class="text">UI Designer</p>
+							<div class="cards-team-text">
+								<h3 class="title">Daniel Wilson</h3>
+								<p class="text">UI Designer</p>
+							</div>
 						</li>
 					</ul>
 				</div>
