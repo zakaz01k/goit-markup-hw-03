@@ -18,6 +18,11 @@ body {
 	color: var(--primary-text-color);
 	font-family: "Roboto", sans-serif;
 }
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 ul {
 	list-style: none;
 	margin: 0;
@@ -268,6 +273,7 @@ header .logo-studio {
 	padding: 12px 24px;
 }
 .format-text {
+	padding-left: 16px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	background: #ffffff;
@@ -278,7 +284,8 @@ header .logo-studio {
 .category-button .item:hover,
 .category-button .item:focus {
 	color: var(--title-hero-color);
-	background-color: var(--hover-link-color);
+	background-color: var(--hero-button-background-color);
+	border: 1px solid var(--primary-link-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 	cursor: pointer;
